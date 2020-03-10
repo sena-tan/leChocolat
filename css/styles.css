@@ -50,3 +50,11 @@ body {
 .table-hover tbody tr:hover {
     background-color: #dbb08db0;
 }
+
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
