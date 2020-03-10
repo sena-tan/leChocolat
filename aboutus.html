@@ -101,7 +101,7 @@
         <div class="row row-content">
             <div class="col-12">
                 <h2>Corporate Leadership</h2>
-                <ul class="nav nav-tabs">
+                <!-- <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab"> Jim Alcon, CEO</a>
                     </li>
@@ -114,10 +114,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#tab4" role="tab" data-toggle="tab"> Vasilis Wilson, SC</a>
                     </li>
-                </ul>
+                </ul> -->
 
-
-                <div class="tab-content">
+                <!-- <div class="tab-content">
                     <div role="tabpanel1" class="tab-pane fade show active" id="tab1">
                         <h3>Jim Alcon <small>Chief Executive Officer </small></h3>
                         <p class="d-none d-sm-block">Jim Alcon is the CEO of our company. He is responsible for the
@@ -148,8 +147,68 @@
                             contributes his innovative
                             ideas in our products. </p>
                     </div>
-                </div>
+                </div> -->
 
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="false" aria-controls="collapseOne">
+                                <h4>Jim Alcon <small>Chief Executive Officer </small></h4>
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="col d-none d-sm-block">Jim Alcon is the CEO of our company. He is responsible
+                                    for the policy and strategy of our company. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                <h4>Bill Peterson <small>Chief Financial Officer </small></h4>
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="col d-none d-sm-block">Bill Peterson is the CFO of our company. He is
+                                    responsible for all the financial decisions of our company. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                <h4>John Cook <small>Chef</small></h4>
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="col d-none d-sm-block">Our Chef, John Cook has specialized in the production
+                                    of chocolates and he has created the receipts for our chocolates. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                aria-expanded="false" aria-controls="collapseFour">
+                                <h4>Vasilis Wilson <small>Sous-chef </small></h4>
+                            </button>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="col d-none d-sm-block">Vasilis Wilson is well informed of all the current
+                                    trends in pastry and contributes his innovative ideas in our products. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -191,61 +250,61 @@
         </div>
     </div>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5 offset-1 col-sm-2">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="./aboutus.html">About</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <!-- <ul class="list-unstyled">
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!-- <ul class="list-unstyled">
                         <li><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
                         <li><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
                         <li><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                         <li><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul> -->
-                    </div>
-                    <div class="col-6 col-sm-5">
-                        <h5>Our Address</h5>
-                        <address>
-                            121, Clear Wave Road<br>
-                            Clear Wave Road, Aloha<br>
-                            HAWAII<br>
-                            <span class="fa fa-phone fa-lg"></span>: +987 6543 2100 <br>
-                            <span class="fa fa-fax fa-lg"></span>: +987 6543 2101 <br>
-                            <span class="fa fa-envelope fa-lg"></span>:
-                            <a href="mailto: chocolat@nomail.net"> chocolat@nomail.net </a>
-                        </address>
-                    </div>
-                    <div class="col col-sm-4 align-self-center" style="text-align:center">
-                        <div>
-                            <a class="btn" href="http://google.com/+"><span class="fa fa-google-plus"></span></a>
-                            <a class="btn" href="http://www.facebook.com/profile.php?id="><span
-                                    class="fa fa-facebook"></span></a>
-                            <a class="btn" href="http://www.linkedin.com/in/"><span class="fa fa-linkedin"></span></a>
-                            <a class="btn" href="http://twitter.com/"><span class="fa fa-twitter"></span></a>
-                            <a class="btn" href="http://youtube.com/"><span class="fa fa-youtube"></span></a>
-                            <a class="btn" href="mailto:"><span class="fa fa-envelope"></span></a>
-                        </div>
-                    </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <p>&copy; Copyright 2018 Le Chocolat</p>
+                <div class="col-6 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Clear Wave Road<br>
+                        Clear Wave Road, Aloha<br>
+                        HAWAII<br>
+                        <span class="fa fa-phone fa-lg"></span>: +987 6543 2100 <br>
+                        <span class="fa fa-fax fa-lg"></span>: +987 6543 2101 <br>
+                        <span class="fa fa-envelope fa-lg"></span>:
+                        <a href="mailto: chocolat@nomail.net"> chocolat@nomail.net </a>
+                    </address>
+                </div>
+                <div class="col col-sm-4 align-self-center" style="text-align:center">
+                    <div>
+                        <a class="btn" href="http://google.com/+"><span class="fa fa-google-plus"></span></a>
+                        <a class="btn" href="http://www.facebook.com/profile.php?id="><span
+                                class="fa fa-facebook"></span></a>
+                        <a class="btn" href="http://www.linkedin.com/in/"><span class="fa fa-linkedin"></span></a>
+                        <a class="btn" href="http://twitter.com/"><span class="fa fa-twitter"></span></a>
+                        <a class="btn" href="http://youtube.com/"><span class="fa fa-youtube"></span></a>
+                        <a class="btn" href="mailto:"><span class="fa fa-envelope"></span></a>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>&copy; Copyright 2018 Le Chocolat</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
-        <script src="node_modules/tether/dist/js/tether.min.js"></script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
