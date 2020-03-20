@@ -38,9 +38,57 @@
                             Contact</a>
                     </li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email
+                                address
+                            </label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">
+                                Password
+                            </label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <header class="jumbotron">
         <div class="container container-fluid">
@@ -56,7 +104,11 @@
                     <img src="images/logo.png" class="img-fluid">
                 </div>
                 <div class="col col-sm">
-                    <a class="btn btn-warning" href="#orderform">Reserve your baskets</a>
+                    <!-- <a class="btn btn-warning" href="#orderform">Reserve your baskets</a> -->
+                    <a type="button" class="btn btn-warning btn-sm btn-block" data-toggle="tooltip" data-html="true"
+                        title="Or Call us at + 987 6543 2100" data-placement="bottom" href="#orderform">
+                        Reserve your baskets
+                    </a>
                 </div>
             </div>
         </div>
@@ -128,10 +180,10 @@
                 </div>
             </div>
         </div>
-        <div class="row row-content justify-content-center">
+        <div class="row row-content align-content-center">
             <div class="col-sm align-items-center">
-                <div class="card">
-                    <div id="orderform" class="card-header text-white bg-warning">
+                <div class="card" id="orderform">
+                    <div class="card-header text-white bg-warning">
                         <h3>Reserve your baskets</h3>
                     </div>
                     <div class="card-body bg-xl">
@@ -151,9 +203,11 @@
                                 <p class="col-12 col-sm-3">Date and Time</p>
                                 <div class="col-sm input-group">
                                     <!-- <span class="input-group-addon fa fa-calendar" aria-hidden="true"></span> -->
-                                    <label for="orderdate"><input type="date" class="form-control" id="orderdate"></label>
+                                    <label for="orderdate"><input type="date" class="form-control"
+                                            id="orderdate"></label>
                                     <!-- <span class="input-group-addon fa fa-clock-o"></span> -->
-                                    <label for="ordertime"><input type="time" class="form-control" id="ordertime"></label>
+                                    <label for="ordertime"><input type="time" class="form-control"
+                                            id="ordertime"></label>
                                 </div>
                             </div>
                             <a type="submit" href="#" class="btn btn-primary">Reserve</a>
@@ -217,6 +271,11 @@
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
 
 </html>
