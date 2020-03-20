@@ -1,6 +1,7 @@
 .row-header {
     margin: 0px auto;
     padding: 0px;
+    justify-content:space-between; 
 }
 
 .row-content {
@@ -59,6 +60,6 @@ body {
     padding: 10px;
   }
 
-  .bg-xl {
+.bg-xl {
     background-color: floralwhite !important;
 }
