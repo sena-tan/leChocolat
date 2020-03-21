@@ -112,14 +112,12 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <p class="col-12 col-sm-3">Date and Time</p>
-                            <div class="col-sm input-group">
-                                <!-- <span class="input-group-addon fa fa-calendar" aria-hidden="true"></span> -->
-                                <label for="orderdate"><input type="date" class="form-control"
-                                        id="orderdate"></label>
-                                <!-- <span class="input-group-addon fa fa-clock-o"></span> -->
-                                <label for="ordertime"><input type="time" class="form-control"
-                                        id="ordertime"></label>
+                            <label class="col-12 col-sm-3">Date and Time</label>
+                            <div class="col-sm input-group-prepend">                               
+                                <!-- <span class="input-group-text fa fa-calendar" aria-hidden="true"></span> -->
+                                <label for="orderdate"><input type="date" class="form-control" id="orderdate"></label>
+                                <!-- <span class="input-group-text fa fa-clock-o"></span> -->
+                                <label for="ordertime"><input type="time" class="form-control" id="ordertime"></label>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -218,6 +216,14 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                          <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                          <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
           </div>
@@ -340,11 +346,7 @@
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script> -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -87,3 +87,8 @@ body {
     color: #fff;
     text-align: center;
   }
+#carouselButtons {
+    position: absolute;
+    top: 0px;
+    margin-left: 47%;
+}
